@@ -9,7 +9,7 @@ class Account(object):
         self.timestamp = timestamp
         self.data = data
         self.balance = 0
-        self.hash = self.user_hash()
+        self.hash = None
 
     def user_hash(self):
         sha = hashlib.sha256()

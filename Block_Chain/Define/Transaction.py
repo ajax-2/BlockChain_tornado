@@ -9,13 +9,12 @@ class Transaction(object):
         FAIL = 1
         VERIFY = 2
 
-    def __init__(self, index, timestamp, data, gas_price):
-        self.index = index
+    def __init__(self, timestamp, data, gas_price):
         self.timestamp = timestamp
         self.data = data
         self.gas_price = gas_price
         self.status = None
-        self.hash = self.transaction_hash()
+        self.hash = None
 
     def transaction_hash(self):
         sha = hashlib.sha256()

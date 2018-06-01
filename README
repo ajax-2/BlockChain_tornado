@@ -1,0 +1,5 @@
+同步，更改prepare为pre_prepare
+同步分为三个阶段
+pre_prepare 请求同步
+prepare 同步
+commit 提交结果

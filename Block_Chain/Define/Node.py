@@ -13,7 +13,7 @@ class Node(object):
         self.data = data
         self.timestamp = timestamp
         self.status = None
-        self.hash = self.node_hash()
+        self.hash = None
 
     def node_hash(self):
         sha = hashlib.sha256()
